@@ -151,12 +151,12 @@ class Home extends Component {
                       <ButtonLink
                         to="/docs/getting-started.html"
                         type="primary">
-                        Get Started
+                        စတင်ရန်
                       </ButtonLink>
                     </CtaItem>
                     <CtaItem>
                       <ButtonLink to="/tutorial/tutorial.html" type="secondary">
-                        Take the Tutorial
+                        သင်ခန်းစာဖြင့်စတင်ရန်
                       </ButtonLink>
                     </CtaItem>
                   </Flex>
