@@ -1,7 +1,7 @@
 ---
-title: A Stateful Component
+title: ကိုယ်ပိုင်  state ကိုအသုံးပြု့ထားသော Component တစ်ခု
 order: 1
 domid: timer-example
 ---
 
-In addition to taking input data (accessed via `this.props`), a component can maintain internal state data (accessed via `this.state`). When a component's state data changes, the rendered markup will be updated by re-invoking `render()`.
+Component တစ်ခုဟာဆိုရင် `this.props` မှတစ်ဆင့် data တွေရယူနိုင်သည့်အပြင်၊ မိမိ့ကိုယ်ပိုင် state ထဲမှာလည်း data ထိန်းသိမ်းထားနိုင်ပါတယ်။ ကိုယ်ပိုင်သိမ်းဆည်းထားသော state မှ data ကိုခေါ်ယူ အသုံးပြုချင်တယ် ဆိုရင်တော့ `this.state` မှတစ်ဆင့် ခေါ်သုံးလို့ရပါတယ်။ Component တစ်ခုရဲ့ ကိုယ်ပိုင် state data တွေ ပြောင်လဲသွားတိုင်းမှာ မူလပြသထားသော UI ကို ပြောင်းလဲပြသရန်အတွက် `render()` method ကိုနောက်တစ်ကြိမ် ထပ်အလုပ်လုပ်စေခြင်းဖြင့် ပြောင်းလဲပေးပါတယ်။
