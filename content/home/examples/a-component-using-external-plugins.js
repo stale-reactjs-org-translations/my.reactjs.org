@@ -19,7 +19,7 @@ class MarkdownEditor extends React.Component {
       <div className="MarkdownEditor">
         <h3>Input</h3>
         <label htmlFor="markdown-content">
-          Enter some markdown
+          Markdown ရေးနည်းဖြင့်ရေးသားထားသော စာများထည့်သွင်းရန်
         </label>
         <textarea
           id="markdown-content"
