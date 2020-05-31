@@ -1,8 +1,8 @@
 ---
-title: Component-Based
+title: Component ကိုအခြေခံခြင်း
 order: 1
 ---
 
-Build encapsulated components that manage their own state, then compose them to make complex UIs.
+React မှာ ကိုယ်ပိုင် state တွေရှိ့တဲ့ component လေးတွေကို အရင်တည်ဆောက်ပါတယ်။ ပြီးတော့မှ ၎င်း component မျာကို စုဖွဲ့၍ ပိုမိုရှုပ်ထွေးသော UIs များတည်ဆောက်နိုင်ပါတယ်။
 
-Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+Component တစ်ခုချင်းစီရဲ့ logic ကို Template ထဲမှာရေးမည့်အစား JavaScript ထဲမှာရေးသားထားခြင်းကြောင့် သင့်အနေနဲ့ သင့်ရဲ့ App ထဲကို များပြားတဲ့ data တွေကို အလွယ်တကူ ပေးပို့နိူင်ပြီး DOM ရဲ့ အပြင်ဘက်မှာ state ကို ထိန်းသိမ်းနိုင်ပါတယ်။ 
