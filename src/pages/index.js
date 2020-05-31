@@ -133,7 +133,7 @@ class Home extends Component {
                         fontSize: 30,
                       },
                     }}>
-                    User Interfaces များတည်ဆောက်ရာတွင် အသုံးပြု့သည့် JavaScript
+                    User Interfaces များတည်ဆောက်ရာတွင် အသုံးပြုသည့် JavaScript
                     library
                   </p>
                   <Flex
