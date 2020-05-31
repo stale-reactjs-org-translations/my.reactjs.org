@@ -1,8 +1,8 @@
 ---
-title: Declarative
+title: Declarative ရေးသားနည်းပုံစံ အသုံးပြုထားခြင်း
 order: 0
 ---
 
-React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+React ဟာဆိုရင် interactive ဖြစ်ဖိုလိုတဲ့ UIs တွေကို လွယ်လွယ်ကူကူပဲ ဖန်တီးပေးနိုင်ပါတယ်။ သင်ဟာ သင့်ရဲ့ application ကို component တစ်ခုချင်းစီတိုင်းမှာ ကိုယ်ပိုင် state တွေနဲ့ ရိုးရိုးရှင်းရှင်း တည်ဆောက်ထားနိုင်တယ်ဆိုရင် သင့် application ရဲ့ data တွေပြောင်းလဲမှုရှိတဲ့ အချိန်မှာ ပြောင်းလဲ ဖော်ပြဖို့လိုတဲ့ components တွေကိုပဲ ပြောင်းလဲဖော်ပြဖို့လိုတဲ့ အချိန်မှာသာလျှင် ပြင်ဆင်ပြောင်းလဲ ဖော်ပြပေးပါတယ်။
 
-Declarative views make your code more predictable and easier to debug.
+Component များဟာ declarative ပုံစံရေးသားထားသည့် အတွက်ကြောင့် ခန့်မှန်းရလွယ်ကူပြီး developer အနေနဲ့ debugging လုပ်ရတာ ပိုမိုလွယ်ကူစေပါတယ်။

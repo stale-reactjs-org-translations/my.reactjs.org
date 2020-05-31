@@ -1,7 +1,7 @@
 ---
-title: An Application
+title: Application တစ်ခု
 order: 2
 domid: todos-example
 ---
 
-Using `props` and `state`, we can put together a small Todo application. This example uses `state` to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
+React component တစ်ခုရဲ့ `props` နှင့် `state` ကိုအသုံးပြုပြီးတော့ ကိုယ်တိုင်တစ်နေ့တာ လုပ်ဆောင်ရမည့် `Todo` application လေးကို ဖန်တီးနိုင်ပါတယ်။ ယခု ဥပမာဟာဆိုရင်ဖြင့် `state` ကို အသုံးပြုပြီးတော့ တစ်နေ့တာ လုပ်ဆောင်ရမည့်စာရင်း(အသုံးပြုသူ ထည့်သွင်းထားသော) ကို စုဆောင်းပေးထားနိုင်ပါတယ်။ Event handlers တွေကို inline ပုံစံရေးသားထားပေမဲ့ ၎င်းတို့ဟာစုပေါင်းလုပ်ဆောင်နိုင်စွမ်းရှိကြပါတယ်။

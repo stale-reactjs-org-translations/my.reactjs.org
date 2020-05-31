@@ -1,8 +1,8 @@
 ---
-title: Learn Once, Write Anywhere
+title: တစ်ကြိမ်လေ့လာ၍ နေရာတိုင်းတွင်ရေးသားနိုင်ခြင်း
 order: 2
 ---
 
-We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+သင့်ရဲ့နည်းပညာ အဆင့်ဟာ မည်သို့ပင်ရှိနေပါစေ React မှာဆိုရင်တော့ လက်ရှိရှိနေပီးသား code base ကိုပြုပြင်စရာမလိုဘဲ Features အသစ်များကို ထပ်တိုးရေးသားနိုင်ပါတယ်။
 
-React can also render on the server using Node and power mobile apps using [React Native](https://reactnative.dev/).
+React နည်းပညာဟာဆိုရင်ဖြင့် Node ကိုအသုံးပြုထားသော  ဆာဗာများပေါ်တွင် အလုပ်လုပ်နိုင်ရုံသာမက မိုဘိုင်လ်နည်းပညာအတွက် [React Native](https://reactnative.dev/) ကိုအသုံးပြုနိင်ပါတယ်။

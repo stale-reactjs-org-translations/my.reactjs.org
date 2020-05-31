@@ -133,7 +133,8 @@ class Home extends Component {
                         fontSize: 30,
                       },
                     }}>
-                    A JavaScript library for building user interfaces
+                    User Interfaces များတည်ဆောက်ရာတွင် အသုံးပြုသည့် JavaScript
+                    library
                   </p>
                   <Flex
                     valign="center"
@@ -151,12 +152,12 @@ class Home extends Component {
                       <ButtonLink
                         to="/docs/getting-started.html"
                         type="primary">
-                        Get Started
+                        စတင်ရန်
                       </ButtonLink>
                     </CtaItem>
                     <CtaItem>
                       <ButtonLink to="/tutorial/tutorial.html" type="secondary">
-                        Take the Tutorial
+                        သင်ခန်းစာဖြင့်စတင်ရန်
                       </ButtonLink>
                     </CtaItem>
                   </Flex>
@@ -294,12 +295,12 @@ class Home extends Component {
                 }}>
                 <CtaItem>
                   <ButtonLink to="/docs/getting-started.html" type="primary">
-                    Get Started
+                    စတင်ရန်
                   </ButtonLink>
                 </CtaItem>
                 <CtaItem>
                   <ButtonLink to="/tutorial/tutorial.html" type="secondary">
-                    Take the Tutorial
+                    သင်ခန်းစာဖြင့်စတင်ရန်
                   </ButtonLink>
                 </CtaItem>
               </Flex>
