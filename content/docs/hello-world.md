@@ -6,7 +6,7 @@ prev: cdn-links.html
 next: introducing-jsx.html
 ---
 
-The smallest React example looks like this:
+React ရဲ့ အသေးငယ်ဆုံး ဥပမာဟာဆိုရင် အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 
 ```js
 ReactDOM.render(
@@ -15,16 +15,16 @@ ReactDOM.render(
 );
 ```
 
-It displays a heading saying "Hello, world!" on the page.
+၎င်းဥပမာဟာဆိုရင် "Hello, world!" ဆိုတဲ့စာသားလေးကို heading အနေနဲ့ ဖော်ပြပေးပါတယ်။
 
 [](codepen://hello-world)
 
-Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
+Online editor တွင်စမ်းသပ်နိုင်ရန် အထက်ပါ link ကို နှိပ်ပါ။ မိမိကိုယ်တိုင် အပြောင်းအလဲများလုပ်နိုင်ပြီး ဘယ်လို output မျိူးပြန်ပြပေးတယ်ဆိုတာ လွပ်လွပ်လပ်လပ်စမ်းသပ်နိုင်ပါတယ်။ ဆက်လက်ဖော်ပြမည့် အသုံးပြုနည်းလမ်းညွန်မှာလည်း ယခုကဲ့သို့ ပြင်ဆင်စမ်းသပ်နိုင်သော ဥပမာများကို ဖော်ပြပေးသွားမှာ ဖြစ်ပါတယ်။ 
 
 
-## How to Read This Guide {#how-to-read-this-guide}
+## အသုံးပြုနည်းလမ်းညွန်ကို ဘယ်လိုဖတ်ရမှာလဲ {#how-to-read-this-guide}
 
-In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+ယခုလမ်းညွန် မှာဆိုရင်တော့ React apps တွေမှာ အခြေခံကျတဲ့ elements တွေနဲ့ components တွေကိုဘယ်လိုတည်ဆောက်ကြမယ်ဆိုတာဖော်ပြပေးသွားမှာဖြစ်ပါတယ်။ သင့်အနေနဲ့ ဤအခြေခံကျတဲ့ အကြောင်းအရာတွေကျွမ်းကျင်သွားပြီဆိုရင် ပိုမိုရှုပ်ထွေးတဲ့ apps တွေကို reusable ဖြစ်တဲ့ အသေးငယ်ဆုံးအစိတ်အပိုင်းလေးတွေကနေ စတင်တည်ဆောက်နိုင်မှာဖြစ်ပါတယ်။
 
 >Tip
 >
