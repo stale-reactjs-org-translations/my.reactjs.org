@@ -6,7 +6,7 @@ prev: cdn-links.html
 next: introducing-jsx.html
 ---
 
-The smallest React example looks like this:
+React ရဲ့ အသေးငယ်ဆုံး ဥပမာဟာဆိုရင် အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 
 ```js
 ReactDOM.render(
@@ -15,36 +15,36 @@ ReactDOM.render(
 );
 ```
 
-It displays a heading saying "Hello, world!" on the page.
+၎င်းဥပမာဟာဆိုရင် "Hello, world!" ဆိုတဲ့စာသားလေးကို heading အနေနဲ့ ဖော်ပြပေးပါတယ်။
 
 [](codepen://hello-world)
 
-Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
+Online editor တွင်စမ်းသပ်နိုင်ရန် အထက်ပါ link ကို နှိပ်ပါ။ မိမိကိုယ်တိုင် အပြောင်းအလဲများလုပ်နိုင်ပြီး ဘယ်လို output မျိူးပြန်ပြပေးတယ်ဆိုတာ လွပ်လွပ်လပ်လပ်စမ်းသပ်နိုင်ပါတယ်။ ဆက်လက်ဖော်ပြမည့် အသုံးပြုနည်းလမ်းညွန်မှာလည်း ယခုကဲ့သို့ ပြင်ဆင်စမ်းသပ်နိုင်သော ဥပမာများကို ဖော်ပြပေးသွားမှာ ဖြစ်ပါတယ်။ 
 
 
-## How to Read This Guide {#how-to-read-this-guide}
+## အသုံးပြုနည်းလမ်းညွန်ကို ဘယ်လိုဖတ်ရမှာလဲ {#how-to-read-this-guide}
 
-In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+ယခုလမ်းညွန် မှာဆိုရင်တော့ React apps တွေမှာ အခြေခံကျတဲ့ elements တွေနဲ့ components တွေကိုဘယ်လိုတည်ဆောက်ကြမယ်ဆိုတာဖော်ပြပေးသွားမှာဖြစ်ပါတယ်။ သင့်အနေနဲ့ ဤအခြေခံကျတဲ့ အကြောင်းအရာတွေကျွမ်းကျင်သွားပြီဆိုရင် ပိုမိုရှုပ်ထွေးတဲ့ apps တွေကို reusable ဖြစ်တဲ့ အသေးငယ်ဆုံးအစိတ်အပိုင်းလေးတွေကနေ စတင်တည်ဆောက်နိုင်မှာဖြစ်ပါတယ်။
 
->Tip
+>အကြံပြုချက်
 >
->This guide is designed for people who prefer **learning concepts step by step**. If you prefer to learn by doing, check out our [practical tutorial](/tutorial/tutorial.html). You might find this guide and the tutorial complementary to each other.
+>ယခုလမ်းညွန်ဟာဆိုရင်ဖြင့် အခြေခံမှတစ်ဆင့် သိ့သင့်သိထိုက်တာတွေကို တစ်ဆင့်ချင်းလေ့လာလိုသူများအတွက် ရည်ရွယ်ပါတယ်။ အကယ်၍သင့်အနေနဲ့ လက်တွေ့လုပ်ဆောင်ရင်းလေ့လာရတာကို နှစ်သက်တယ်ဆိုရင်ဖြင့် [practical tutorial](/tutorial/tutorial.html) ကိုဖတ်ရှုလေ့လာသင့်ပါတယ်။ သင့်အနေ့နဲ့ ယခုလမ်းညွန်နဲ့ tutorial ဟာဆက်စပ်နေတယ်ဆိုတာကိုတွေ့မြင်ရပါလိမ့်မည်။
 
-This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all its chapters in the navigation sidebar. If you're reading this from a mobile device, you can access the navigation by pressing the button in the bottom right corner of your screen.
+ယခု chapter ဟာဆိုရင် React မှာသိ့သင့်သိ့ထိုက်တဲ့ အချက်တွေကိုဖော်ပြပေးမယ့် ပထမဆုံး chapter ဖြစ်ပါတယ်။ Chapters အားလုံးကို သိလိုတယ်ဆိုရင်တော့ ညာဘက် navigation sidebar မှာကြည့်ရှုနိုင်ပါတယ်။ သင့်အနေနဲ့ mobile အသုံးပြု့ပြီးဖတ်ရှုနေတယ်ဆိုရင်တော့ ညာဖက်အောက်ဖက်မှာ ရှိတဲ့ button လေးကိုနှိပ်ပြီး ကြည့်ရှုနိုင်မှာ ဖြစ်ပါတယ်။
 
-Every chapter in this guide builds on the knowledge introduced in earlier chapters. **You can learn most of React by reading the “Main Concepts” guide chapters in the order they appear in the sidebar.** For example, [“Introducing JSX”](/docs/introducing-jsx.html) is the next chapter after this one.
+Chapters အသီးသီးဟာဆိုရင် ဖတ်ရှုပြီးသော အရင် chapter ပေါ်မှာမူတည်ပြီး နောက် chapter ကိုတည်ဆောက်ပေးထားတာဖြစ်ပါတယ်။ **ဒါကြောင့်သင့်အနေနဲ့ “Main Concepts” လိုခေါ်တဲ့ ယခု လမ်းညွန်ကို ညာဖက် sidebar မှာတစ်ဆင့်ချင်းဖတ်သွားသင့်ပါတယ်။** ဥပမာ [“Introducing JSX”](/docs/introducing-jsx.html) ဟာဆိုရင် နောက်ဆက်ပြီးလာမည့် chapter ဖြစ်ပါတယ်။
 
-## Knowledge Level Assumptions {#knowledge-level-assumptions}
+## ယခုလမ်းညွန်အတွက် သင့်ရဲ့ Knowledge Level ယူဆချက် {#knowledge-level-assumptions}
 
-React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
+React ဟာဆိုရင် JavaScript library တစ်ခုဖြစ်ပါတယ်။ဒါကြောင့်သင့်အနေနဲ့ JavaScript language နဲ့ပတ်သက်ပြီး အခြေခံရှိမယ်လို့ယူဆပါတယ်။ အကယ်၍သင့်အနေနဲ့ ကိုယ်တိုင်ယုံကြည်မှု့ မသေခြာရင် [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) ကိုသွားရောက်ပြီးမိမိကိုယ်ကိုယ် စစ်ဆေးနိုင်ပါတယ်။ အဒီကိုသွားရောက်လေ့လာတာဟာဆိုရင် အချိန်အားဖြင့် ၃၀ မိနစ်နဲ့ ၁နာရီကြားမှာကြာနိုင်တယ်ဆိုပေမဲ့ ရလဒ်တစ်ခုအနေနဲ့ကတော့ ကိုယ်တိုင် React and JavaScript ကို တစ်ပြိုင်နက် လေ့လာနေရတယ်ဆိုတဲ့စိတ်မျိုးခံစားရမှာ မဟုတ်တော့ပါဘူး။
 
->Note
+>မှတ်သားရန်
 >
->This guide occasionally uses some of the newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>ယခုလမ်းညွန်ဟာဆိုရင် အသစ်ဖြစ်တဲ့ JavaScript syntax တွေကို ဥပမာအများစုမှာသုံးထားတာဖြစ်ပါတယ်။ သင့်အနေနဲ့ လွန်ခဲ့တဲ့နှစ်အနည်ငယ်ကစလို့ JavaScript ကိုအကျွမ်းတဝင်မရှိဘူးဆိုရင်  [ဤအချက်သုံးချက်](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) ကိုစလေ့လာခြင်းဟာနည်းလမ်းမှန်ကန်စေမှာပါ။
 
 
-## Let's Get Started! {#lets-get-started}
+## ကဲစပြီးလေ့လာကြပါဆို့! {#lets-get-started}
 
-Keep scrolling down, and you'll find the link to the [next chapter of this guide](/docs/introducing-jsx.html) right before the website footer.
+အောက်ဖက်ကို ဆက်ပြီး scroll ဆွဲသွားလိုက်ပါ။ website အောက်ခြေမရောက်ခင်မှာ [နောက်လာမည့် chapter](/docs/introducing-jsx.html) ရဲ့ link ကိုတွေ့မြင်ရမှာဖြစ်ပါတယ်။
 
 
