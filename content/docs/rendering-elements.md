@@ -8,9 +8,9 @@ prev: introducing-jsx.html
 next: components-and-props.html
 ---
 
-Elements are the smallest building blocks of React apps.
+Elements တွေဟာဆို React apps တွေမှာ အခြေခံအကျဆုံးနဲ့ အသေးငယ်ဆုံး အစိတ်အပိုင်းလေးတွေပဲဖြစ်ပါတယ်။
 
-An element describes what you want to see on the screen:
+Screen ပေါ်မှာ သင်မြင်ချင်တဲ့ အရာတွေကို element တစ်ခုနဲ့ဖော်ပြပေးလို့ရပါတယ်။
 
 ```js
 const element = <h1>Hello, world</h1>;
@@ -20,27 +20,27 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 >**Note:**
 >
->One might confuse elements with a more widely known concept of "components". We will introduce components in the [next section](/docs/components-and-props.html). Elements are what components are "made of", and we encourage you to read this section before jumping ahead.
+>ဒီနေရာမှာ သင့်အနေနဲ့ elements တွေကို လူအများသိ့ကြတဲ့ "components" တွေနဲ့အမြင်မှားနိုင်ပါတယ်။ Components တွေအကြောင်းကို နောက်လာမည့် [next section](/docs/components-and-props.html) တွင်ဖော်ပြသွားမှာဖြစ်ပါတယ်။ တစ်ကယ်တော့ Elements တွေကို ပေါင်းစပ်ပီး components တွေကိုဖန်တီးထားတာဖြစ်ပါတယ်။ ပြီးတော့ သင့်အနေနဲ့ ယခု section ကိုကျော်မဖတ်ဖို့တိုက်တွန်းပါရစေ။
 
 ## Rendering an Element into the DOM {#rendering-an-element-into-the-dom}
 
-Let's say there is a `<div>` somewhere in your HTML file:
+HTML ဖိုင်တစ်ခုမှာ `<div>` တစ်ခုရှိနေတယ်ဆိုကြပါစို့။
 
 ```html
 <div id="root"></div>
 ```
 
-We call this a "root" DOM node because everything inside it will be managed by React DOM.
+ဒါကို "root" (မူရင်း) DOM node ခေါ်ဆိုပါမည်။ ဘာဖြစ်လို့လဲဆိုတော့ အဲဒီ node ထဲမှာရှိတဲ့ တစ်ခြား node တွေအားလုံးကို React DOM က ကြိူးကိုင်စေခိုင်းတော့မှာမို့ဖြစ်ပါတယ်။
 
-Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+React နည်းပညာတစ်မျိုးတည်း အသုံးပြု့ထားတဲ့ application အများစုမှာတော့ root DOM node ကတစ်ခုပဲရှိတက်ပါတယ်။ အကယ်၍ သင့်အနေနဲ့ရှိနေပြီးသား application ထဲကို React ကိုထည့်သွင်းအသုံးပြု့တာဆိုရင်တော့ root DOM node တွေအများကြီးကို သင်စိတ်ကြိုက် ဖန်တီးနိုင်ပါတယ်။
 
-To render a React element into a root DOM node, pass both to [`ReactDOM.render()`](/docs/react-dom.html#render):
+React element တစ်ခု့ကို root DOM node မှာ ထည့်သွင်းဖော်ပြဖို့ဆိုရင်၊ ဖော်ပြလိုသော element နှင့် root DOM node နှစ်ခုလုံးကို [`ReactDOM.render()`](/docs/react-dom.html#render) မှာ parameter အနေနဲ့ထည့်ပေးရမှာဖြစ်ပါတယ်။
 
 `embed:rendering-elements/render-an-element.js`
 
 [](codepen://rendering-elements/render-an-element)
 
-It displays "Hello, world" on the page.
+အထက်ပါ ဥပမာဟာဆိုရင် page မှာ "Hello, world" ဆိုတဲ့စာသားကိုဖော်ပြပေးပါတယ်။
 
 ## Updating the Rendered Element {#updating-the-rendered-element}
 
