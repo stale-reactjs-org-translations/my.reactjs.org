@@ -8,68 +8,68 @@ prev: introducing-jsx.html
 next: components-and-props.html
 ---
 
-Elements are the smallest building blocks of React apps.
+Elements တွေဟာဆို React apps တွေမှာ အခြေခံအကျဆုံးနဲ့ အသေးငယ်ဆုံး အစိတ်အပိုင်းလေးတွေပဲဖြစ်ပါတယ်။
 
-An element describes what you want to see on the screen:
+Screen ပေါ်မှာ သင်မြင်ချင်တဲ့ အရာတွေကို element တစ်ခုနဲ့ဖော်ပြပေးလို့ရပါတယ်။
 
 ```js
 const element = <h1>Hello, world</h1>;
 ```
 
-Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+Browser DOM element များနှင့်မတူသည်မှာ React element များသည် plain object များဖြစ်ပြီးဖန်တီးရန် လွယ်ကူပါတယ်။ React DOM သည် React element များနှင့်ကိုက်ညီမှန်ကန်စေရန် DOM ကို စနစ်တကျ update လုပ်ပေးပါတယ်။
 
 >**Note:**
 >
->One might confuse elements with a more widely known concept of "components". We will introduce components in the [next section](/docs/components-and-props.html). Elements are what components are "made of", and we encourage you to read this section before jumping ahead.
+>ဒီနေရာမှာ သင့်အနေနဲ့ elements တွေကို လူအများသိ့ကြတဲ့ "components" တွေနဲ့အမြင်မှားနိုင်ပါတယ်။ Components တွေအကြောင်းကို နောက်လာမည့် [next section](/docs/components-and-props.html) တွင်ဖော်ပြသွားမှာဖြစ်ပါတယ်။ တစ်ကယ်တော့ Elements တွေကို ပေါင်းစပ်ပီး components တွေကိုဖန်တီးထားတာဖြစ်ပါတယ်။ ပြီးတော့ သင့်အနေနဲ့ ယခု section ကိုကျော်မဖတ်ဖို့တိုက်တွန်းပါရစေ။
 
 ## Rendering an Element into the DOM {#rendering-an-element-into-the-dom}
 
-Let's say there is a `<div>` somewhere in your HTML file:
+HTML ဖိုင်တစ်ခုမှာ `<div>` တစ်ခုရှိနေတယ်ဆိုကြပါစို့။
 
 ```html
 <div id="root"></div>
 ```
 
-We call this a "root" DOM node because everything inside it will be managed by React DOM.
+ဒါကို "root" (မူရင်း) DOM node ခေါ်ဆိုပါမည်။ ဘာဖြစ်လို့လဲဆိုတော့ အဲဒီ node ထဲမှာရှိတဲ့ တစ်ခြား node တွေအားလုံးကို React DOM က ကြိူးကိုင်စေခိုင်းတော့မှာမို့ဖြစ်ပါတယ်။
 
-Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+React နည်းပညာတစ်မျိုးတည်း အသုံးပြု့ထားတဲ့ application အများစုမှာတော့ root DOM node ကတစ်ခုပဲရှိတက်ပါတယ်။ အကယ်၍ သင့်အနေနဲ့ရှိနေပြီးသား application ထဲကို React ကိုထည့်သွင်းအသုံးပြု့တာဆိုရင်တော့ root DOM node တွေအများကြီးကို သင်စိတ်ကြိုက် ဖန်တီးနိုင်ပါတယ်။
 
-To render a React element into a root DOM node, pass both to [`ReactDOM.render()`](/docs/react-dom.html#render):
+React element တစ်ခု့ကို root DOM node မှာ ထည့်သွင်းဖော်ပြဖို့ဆိုရင်၊ ဖော်ပြလိုသော element နှင့် root DOM node နှစ်ခုလုံးကို [`ReactDOM.render()`](/docs/react-dom.html#render) မှာ parameter အနေနဲ့ထည့်ပေးရမှာဖြစ်ပါတယ်။
 
 `embed:rendering-elements/render-an-element.js`
 
 [](codepen://rendering-elements/render-an-element)
 
-It displays "Hello, world" on the page.
+အထက်ပါ ဥပမာဟာဆိုရင် page မှာ "Hello, world" ဆိုတဲ့စာသားကိုဖော်ပြပေးပါတယ်။
 
 ## Updating the Rendered Element {#updating-the-rendered-element}
 
-React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+React elements တွေဟာဆိုရင် [immutable](https://en.wikipedia.org/wiki/Immutable_object) ဖြစ်ကြပါတယ်။ ဆိုလိုတာကတော့ သင့်အနေနဲ့ element တစ်ခုကို ဖန်တီးပြီးတိုင်းမှာ သူ့ရဲ့ attributes တွေနဲ့ children node တွေကိုပြောင်းလဲ့လို့မရပါဘူး။
 
-With our knowledge so far, the only way to update the UI is to create a new element, and pass it to [`ReactDOM.render()`](/docs/react-dom.html#render).
+လောလောဆယ် ကျွန်တော်တို့သိ့ထားသလောက်နဲ့ဆိုရင် UI ကို update လုပ်ဖို့ဆိုရင် new element တွေကို တည်ဆောက်ပြီး [`ReactDOM.render()`](/docs/react-dom.html#render) နဲ့ပြန်ပြီး render လုပ်တဲ့နည်းပဲရှိပါတယ်။
 
-Consider this ticking clock example:
+အောက်ပါ ticking clock ဥပမာကိုလေ့လာကြည့်ပါ:
 
 `embed:rendering-elements/update-rendered-element.js`
 
 [](codepen://rendering-elements/update-rendered-element)
 
-It calls [`ReactDOM.render()`](/docs/react-dom.html#render) every second from a [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
+၎င်း ဥပမာဟာဆိုရင် [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) ရဲ့ callback ကနေတစ်ဆင့် [`ReactDOM.render()`](/docs/react-dom.html#render) ကို UI update လုပ်ရန် စက္ကန့်တိုင်းမှာခေါ်နေရတာပဲဖြစ်ပါတယ်။
 
 >**Note:**
 >
->In practice, most React apps only call [`ReactDOM.render()`](/docs/react-dom.html#render) once. In the next sections we will learn how such code gets encapsulated into [stateful components](/docs/state-and-lifecycle.html).
+>တစ်ကယ်တမ်း React apps တွေရေးတဲ့ အခါမှာတော့ [`ReactDOM.render()`](/docs/react-dom.html#render) ကိုတစ်ခါပဲခေါ် ပြီး အသုံးပြု့ကြပါတယ်။  နောက်လာမည့် sections တွေမှာတော့ ယခုကဲသို့သော code တွေကို ဘယ်လို [stateful components](/docs/state-and-lifecycle.html) တွေဖြစ်အောင်ဖန်တီးသွာမည့်ဆိုတာတွေ့ရှိရမှာဖြစ်ပါတယ်။
 >
->We recommend that you don't skip topics because they build on each other.
+>သင့်အနေနဲ့ topics တွေကို ကျော်ပြီးမဖတ်ဖို့ အကြံပြု့ပါတယ်။ ဘာဖြစ်လို့လဲဆိုတော့ topics တွေက တစ်ခုကိုတစ်ခု အခြေခံ့ထားကြလို့ဖြစ်ပါတယ်။
 
-## React Only Updates What's Necessary {#react-only-updates-whats-necessary}
+## React ဟာဆိုရင်လိုအပ်တဲ့နေရာကိုပဲ update လုပ်ပါတယ် {#react-only-updates-whats-necessary}
 
-React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
+React DOM ဟာဆိုရင် element တစ်ခု့ကို update လုပ်တဲ့နေရာမှာ element ရဲ့ အရင်ရှိပြီးသား attributes တွေနဲ့ children elements တွေကို နှိုင်းယှဉ်မှု့တွေလုပ်ပြီး လိုအပ်တဲ့နေရာကိုပဲကွက်ပြီး update လုပ်ပေးပါတယ်။
 
-You can verify by inspecting the [last example](codepen://rendering-elements/update-rendered-element) with the browser tools:
+သင့်အနေနဲ့ ဒါကို [ယခင်ဥပမာ](codepen://rendering-elements/update-rendered-element) မှာ browser tools တွင် inspect ထောက်ပြီးစစ်ဆေးနိုင်ပါတယ်။
 
 ![DOM inspector showing granular updates](../images/docs/granular-dom-updates.gif)
 
-Even though we create an element describing the whole UI tree on every tick, only the text node whose contents have changed gets updated by React DOM.
+စက္ကန့်တိုင်းမှာ UI tree အကုန်လုံးပါတဲ့ element အသစ်ကိုဖန်တီးနေတယ်ဆိုပေမဲ့၊ အပြောင်အလဲရှိတဲ့ text node တစ်ခုတည်းကိုသာ React DOM ကနေရွေးခြယ်ပြီး update လုပ်ပေးပါတယ်။
 
-In our experience, thinking about how the UI should look at any given moment, rather than how to change it over time, eliminates a whole class of bugs.
+ကျွန်တော်တို့အတွေ့အကြုံးအရဆိုရင် အချိန်အလိုက် UI ကို ဘယ်လို update လုပ်မယ်ဆိုတာထက်စာရင် ဘယ်အချိန်မျိုးမှာ UI ကဘယ်လိုဖြစ်နေရမယ်ဆိုတာမျိူးက bugs တော်တော်များများကို လျော့ချပေးပါလိမ့်မယ်။
