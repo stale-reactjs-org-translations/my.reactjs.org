@@ -40,7 +40,11 @@ React ဟာဆိုရင် JavaScript library တစ်ခုဖြစ်ပ
 
 >မှတ်သားရန်
 >
+<<<<<<< HEAD
 >ယခုလမ်းညွန်ဟာဆိုရင် အသစ်ဖြစ်တဲ့ JavaScript syntax တွေကို ဥပမာအများစုမှာသုံးထားတာဖြစ်ပါတယ်။ သင့်အနေနဲ့ လွန်ခဲ့တဲ့နှစ်အနည်ငယ်ကစလို့ JavaScript ကိုအကျွမ်းတဝင်မရှိဘူးဆိုရင်  [ဤအချက်သုံးချက်](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) ကိုစလေ့လာခြင်းဟာနည်းလမ်းမှန်ကန်စေမှာပါ။
+=======
+>This guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>>>>>>> 25f756d8e3800afb032cb31ce3626d6134e31e38
 
 
 ## ကဲစပြီးလေ့လာကြပါဆို့! {#lets-get-started}
