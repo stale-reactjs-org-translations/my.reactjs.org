@@ -38,7 +38,7 @@ React element တစ်ခု့ကို root DOM node မှာ ထည့်�
 
 `embed:rendering-elements/render-an-element.js`
 
-[](codepen://rendering-elements/render-an-element)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/ZpvBNJ?editors=1010)**
 
 အထက်ပါ ဥပမာဟာဆိုရင် page မှာ "Hello, world" ဆိုတဲ့စာသားကိုဖော်ပြပေးပါတယ်။
 
@@ -52,7 +52,7 @@ React elements တွေဟာဆိုရင် [immutable](https://en.wikipedi
 
 `embed:rendering-elements/update-rendered-element.js`
 
-[](codepen://rendering-elements/update-rendered-element)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=1010)**
 
 ၎င်း ဥပမာဟာဆိုရင် [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) ရဲ့ callback ကနေတစ်ဆင့် [`ReactDOM.render()`](/docs/react-dom.html#render) ကို UI update လုပ်ရန် စက္ကန့်တိုင်းမှာခေါ်နေရတာပဲဖြစ်ပါတယ်။
 
@@ -66,7 +66,11 @@ React elements တွေဟာဆိုရင် [immutable](https://en.wikipedi
 
 React DOM ဟာဆိုရင် element တစ်ခု့ကို update လုပ်တဲ့နေရာမှာ element ရဲ့ အရင်ရှိပြီးသား attributes တွေနဲ့ children elements တွေကို နှိုင်းယှဉ်မှု့တွေလုပ်ပြီး လိုအပ်တဲ့နေရာကိုပဲကွက်ပြီး update လုပ်ပေးပါတယ်။
 
+<<<<<<< HEAD
 သင့်အနေနဲ့ ဒါကို [ယခင်ဥပမာ](codepen://rendering-elements/update-rendered-element) မှာ browser tools တွင် inspect ထောက်ပြီးစစ်ဆေးနိုင်ပါတယ်။
+=======
+You can verify by inspecting the [last example](https://codepen.io/gaearon/pen/gwoJZk?editors=1010) with the browser tools:
+>>>>>>> a08e1fd4b574a4d2d55e292af9eb01d55a526303
 
 ![DOM inspector showing granular updates](../images/docs/granular-dom-updates.gif)
 
