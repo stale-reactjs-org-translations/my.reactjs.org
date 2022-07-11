@@ -34,11 +34,15 @@ HTML ဖိုင်တစ်ခုမှာ `<div>` တစ်ခုရှိန
 
 React နည်းပညာတစ်မျိုးတည်း အသုံးပြု့ထားတဲ့ application အများစုမှာတော့ root DOM node ကတစ်ခုပဲရှိတက်ပါတယ်။ အကယ်၍ သင့်အနေနဲ့ရှိနေပြီးသား application ထဲကို React ကိုထည့်သွင်းအသုံးပြု့တာဆိုရင်တော့ root DOM node တွေအများကြီးကို သင်စိတ်ကြိုက် ဖန်တီးနိုင်ပါတယ်။
 
+<<<<<<< HEAD
 React element တစ်ခု့ကို root DOM node မှာ ထည့်သွင်းဖော်ပြဖို့ဆိုရင်၊ ဖော်ပြလိုသော element နှင့် root DOM node နှစ်ခုလုံးကို [`ReactDOM.render()`](/docs/react-dom.html#render) မှာ parameter အနေနဲ့ထည့်ပေးရမှာဖြစ်ပါတယ်။
+=======
+To render a React element, first pass the DOM element to [`ReactDOM.createRoot()`](/docs/react-dom-client.html#createroot), then pass the React element to `root.render()`:
+>>>>>>> f67fa22cc1faee261f9e22449d90323e26174e8e
 
 `embed:rendering-elements/render-an-element.js`
 
-[](codepen://rendering-elements/render-an-element)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/ZpvBNJ?editors=1010)**
 
 အထက်ပါ ဥပမာဟာဆိုရင် page မှာ "Hello, world" ဆိုတဲ့စာသားကိုဖော်ပြပေးပါတယ်။
 
@@ -46,19 +50,31 @@ React element တစ်ခု့ကို root DOM node မှာ ထည့်�
 
 React elements တွေဟာဆိုရင် [immutable](https://en.wikipedia.org/wiki/Immutable_object) ဖြစ်ကြပါတယ်။ ဆိုလိုတာကတော့ သင့်အနေနဲ့ element တစ်ခုကို ဖန်တီးပြီးတိုင်းမှာ သူ့ရဲ့ attributes တွေနဲ့ children node တွေကိုပြောင်းလဲ့လို့မရပါဘူး။
 
+<<<<<<< HEAD
 လောလောဆယ် ကျွန်တော်တို့သိ့ထားသလောက်နဲ့ဆိုရင် UI ကို update လုပ်ဖို့ဆိုရင် new element တွေကို တည်ဆောက်ပြီး [`ReactDOM.render()`](/docs/react-dom.html#render) နဲ့ပြန်ပြီး render လုပ်တဲ့နည်းပဲရှိပါတယ်။
+=======
+With our knowledge so far, the only way to update the UI is to create a new element, and pass it to `root.render()`.
+>>>>>>> f67fa22cc1faee261f9e22449d90323e26174e8e
 
 အောက်ပါ ticking clock ဥပမာကိုလေ့လာကြည့်ပါ:
 
 `embed:rendering-elements/update-rendered-element.js`
 
-[](codepen://rendering-elements/update-rendered-element)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=1010)**
 
+<<<<<<< HEAD
 ၎င်း ဥပမာဟာဆိုရင် [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) ရဲ့ callback ကနေတစ်ဆင့် [`ReactDOM.render()`](/docs/react-dom.html#render) ကို UI update လုပ်ရန် စက္ကန့်တိုင်းမှာခေါ်နေရတာပဲဖြစ်ပါတယ်။
 
 >**Note:**
 >
 >တစ်ကယ်တမ်း React apps တွေရေးတဲ့ အခါမှာတော့ [`ReactDOM.render()`](/docs/react-dom.html#render) ကိုတစ်ခါပဲခေါ် ပြီး အသုံးပြု့ကြပါတယ်။  နောက်လာမည့် sections တွေမှာတော့ ယခုကဲသို့သော code တွေကို ဘယ်လို [stateful components](/docs/state-and-lifecycle.html) တွေဖြစ်အောင်ဖန်တီးသွာမည့်ဆိုတာတွေ့ရှိရမှာဖြစ်ပါတယ်။
+=======
+It calls [`root.render()`](/docs/react-dom.html#render) every second from a [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
+
+>**Note:**
+>
+>In practice, most React apps only call `root.render()` once. In the next sections we will learn how such code gets encapsulated into [stateful components](/docs/state-and-lifecycle.html).
+>>>>>>> f67fa22cc1faee261f9e22449d90323e26174e8e
 >
 >သင့်အနေနဲ့ topics တွေကို ကျော်ပြီးမဖတ်ဖို့ အကြံပြု့ပါတယ်။ ဘာဖြစ်လို့လဲဆိုတော့ topics တွေက တစ်ခုကိုတစ်ခု အခြေခံ့ထားကြလို့ဖြစ်ပါတယ်။
 
@@ -66,7 +82,11 @@ React elements တွေဟာဆိုရင် [immutable](https://en.wikipedi
 
 React DOM ဟာဆိုရင် element တစ်ခု့ကို update လုပ်တဲ့နေရာမှာ element ရဲ့ အရင်ရှိပြီးသား attributes တွေနဲ့ children elements တွေကို နှိုင်းယှဉ်မှု့တွေလုပ်ပြီး လိုအပ်တဲ့နေရာကိုပဲကွက်ပြီး update လုပ်ပေးပါတယ်။
 
+<<<<<<< HEAD
 သင့်အနေနဲ့ ဒါကို [ယခင်ဥပမာ](codepen://rendering-elements/update-rendered-element) မှာ browser tools တွင် inspect ထောက်ပြီးစစ်ဆေးနိုင်ပါတယ်။
+=======
+You can verify by inspecting the [last example](https://codepen.io/gaearon/pen/gwoJZk?editors=1010) with the browser tools:
+>>>>>>> f67fa22cc1faee261f9e22449d90323e26174e8e
 
 ![DOM inspector showing granular updates](../images/docs/granular-dom-updates.gif)
 
