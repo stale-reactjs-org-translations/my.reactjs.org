@@ -8,16 +8,14 @@ next: introducing-jsx.html
 
 React ရဲ့ အသေးငယ်ဆုံး ဥပမာဟာဆိုရင် အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 
-```js
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
-);
+```jsx
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<h1>Hello, world!</h1>);
 ```
 
 ၎င်းဥပမာဟာဆိုရင် "Hello, world!" ဆိုတဲ့စာသားလေးကို heading အနေနဲ့ ဖော်ပြပေးပါတယ်။
 
-[](codepen://hello-world)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/rrpgNB?editors=1010)**
 
 Online editor တွင်စမ်းသပ်နိုင်ရန် အထက်ပါ link ကို နှိပ်ပါ။ မိမိကိုယ်တိုင် အပြောင်းအလဲများလုပ်နိုင်ပြီး ဘယ်လို output မျိူးပြန်ပြပေးတယ်ဆိုတာ လွပ်လွပ်လပ်လပ်စမ်းသပ်နိုင်ပါတယ်။ ဆက်လက်ဖော်ပြမည့် အသုံးပြုနည်းလမ်းညွန်မှာလည်း ယခုကဲ့သို့ ပြင်ဆင်စမ်းသပ်နိုင်သော ဥပမာများကို ဖော်ပြပေးသွားမှာ ဖြစ်ပါတယ်။ 
 
@@ -40,7 +38,11 @@ React ဟာဆိုရင် JavaScript library တစ်ခုဖြစ်ပ
 
 >မှတ်သားရန်
 >
+<<<<<<< HEAD
 >ယခုလမ်းညွန်ဟာဆိုရင် အသစ်ဖြစ်တဲ့ JavaScript syntax တွေကို ဥပမာအများစုမှာသုံးထားတာဖြစ်ပါတယ်။ သင့်အနေနဲ့ လွန်ခဲ့တဲ့နှစ်အနည်ငယ်ကစလို့ JavaScript ကိုအကျွမ်းတဝင်မရှိဘူးဆိုရင်  [ဤအချက်သုံးချက်](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) ကိုစလေ့လာခြင်းဟာနည်းလမ်းမှန်ကန်စေမှာပါ။
+=======
+>This guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>>>>>>> 3ff6fe871c6212118991ffafa5503358194489a0
 
 
 ## ကဲစပြီးလေ့လာကြပါဆို့! {#lets-get-started}
